@@ -1,19 +1,101 @@
 /* style.css */
 
 body{
+	background: white;
+	color: #91939;
 	margin: 0px;
 	padding: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:13px;
 }
 
 h1{
-
+	background: white;
+	color: #91939;
+	font-size:40px;
+	text-align:center;
 }
 
 header{
 	height: 100px;
+	color: orange;
 }
 
 footer{
+	background: black;
+	color: white;
 	height: 80px;
+	text-align:center;
+	border-top: 2px solid grey;
+	padding-top: 30px;
 }
 
+
+nav li {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	list-style-type: none;
+	display: inline-block;
+	font-size: 15px;
+	padding:30px;
+}
+
+nav ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav {
+	background: orange;
+	width:100%;
+
+}
+
+nav a {
+	padding: 20px 30px;
+}
+
+div {
+display: table;
+margin:0 auto;
+}
+
+#bandeannonce {
+	height: 500px;
+}
+
+.container {
+	margin:0px 10%;
+	display:flex;
+	justify-content: center;
+}
+
+.left {
+	float:right;
+	width: 50%;
+	background: white;
+}
+
+.right {
+	float:right;
+	width: 50%;
+	background: white;
+}
+
+
+/*. @media screen and (max-width: 900px) {
+	
+	.body {
+		display: block;
+	}
+
+	.main {
+		width: 100%;
+	}
+
+	.sidebar {
+		width: 100%;
+	}
+
+}
