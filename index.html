@@ -2,43 +2,89 @@
 <html lang="fr-FR">
 	<head>
 		<meta charset="utf-8">
-		<title> film movie </title>
+		<title>The World of Avatar | Pandoran Research Foundation</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/png" href="favicon.ico" sizes="32x32" data-react-helmet="true">
 		<style type="text/css">
            A {text-decoration: none;}
        </style> 
 	</head>
 	<body>
+
+<!-- page "bande annonce", titre du site -->
 		<header>
-			<h1> American Pie </h1>
+			<h1 class="degrade">Avatar</h1>
+			<img src="images/avatar/prf-logo-vertical-gradient.svg" alt= "Pandora Research Fondation" id="logo"/>
 		</header>
-		<nav>
-			<div class="menu">
+
+<!-- menu principal -->
+		<nav class="menu">
 				<ul>
 					<li class="menu-a">
-						<a href="index.html"> BANDE ANNONCE </a>
+						<a class="current-link" href="index.html"> BANDE ANNONCE </a>
 					</li>
 					<li class="menu-b">
 						<a href="casting.html"> CASTING </a>
 					</li>
 				</ul>
-			</div>
 		</nav>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img class="slideshow" src="images/avatar/banner-1.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img class="slideshow" src="images/avatar/banner-2.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img class="slideshow" src="images/avatar/banner-3.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+<!-- article bande annonce + description -->
 		<section id="bandeannonce">
-			<h1> titre du filme </h1>
-				<div class="container">
-				 	<div class="left">
-						<iframe width="80%" height="400" src="https://www.youtube.com/embed/wu1Sk8iOPnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					<div class="right">
-				 		<p> hello ici la description </p>
-				 	</div>
-				</div>
+			<h2>Synopsis</h2>
+				<article class="container">
+
+					<!-- figure de gauche (video b-a) -->
+				 	<figure class="left">
+							<iframe width="530" height="315" src="https://www.youtube.com/embed/M8Mi0elohJw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</figure>
+
+					<!-- figure de droite (description) -->
+					<figure class="right">
+				 		<p>	Malgré sa paralysie, Jake Sully, un ancien marine immobilisé dans un fauteuil roulant, est resté un combattant au plus profond de son être. Il est recruté pour se rendre à des années-lumière de la Terre, sur Pandora, où de puissants groupes industriels exploitent un minerai rarissime destiné à résoudre la crise énergétique sur Terre. <br> <br> Parce que l'atmosphère de Pandora est toxique pour les humains, ceux-ci ont créé le Programme Avatar, qui permet à des " pilotes " humains de lier leur esprit à un avatar, un corps biologique commandé à distance, capable de survivre dans cette atmosphère létale. <br> <br> Ces avatars sont des hybrides créés génétiquement en croisant l'ADN humain avec celui des Na'vi, les autochtones de Pandora. Sous sa forme d'avatar, Jake peut de nouveau marcher. On lui confie une mission d'infiltration auprès des Na'vi, devenus un obstacle trop conséquent à l'exploitation du précieux minerai. Mais tout va changer lorsque Neytiri, une très belle Na'vi, sauve la vie de Jake...</p>
+				 	</figure>
+				</article>
 		</section>
-		<footer>
-			<p> Copyright 2020 </p>
-		</footer>
+
+<!-- footer, bas de page -->
+			<footer>
+				<p class="footer-description"> ™ and © 2020 Twentieth Century Studios. JAMES CAMERON'S AVATAR is a trademark of the Twentieth Century Studios. All Rights Reserved </p>
+			</footer>
+		<script type="text/javascript" src="scripts/main.js"></script>
 	</body>
 </html>
