@@ -13,10 +13,11 @@
 	</head>
 	<body>
 
-<!-- page "bande annonce", titre du site -->
+<!-- logo et titre du site -->
 		<header>
-			<h1 class="degrade">Avatar</h1>
-			<img src="images/avatar/prf-logo-vertical-gradient.svg" alt= "Pandora Research Fondation" id="logo"/>
+			<p><a href="index.html" title="Pandora Research Foundation"><h1 class="degrade">Avatar</h1></a></p>
+			<!-- <img src="images/avatar/prf-logo-vertical-gradient.svg" alt= "Pandora Research Fondation" id="logo"/> -->
+			<p><a href="https://www.avatar.com/" target="_blank" title="Pandora Research Foundation"><img src="images/avatar/prf-logo-vertical-gradient.svg" border="0" alt= "Pandora Research Fondation" id="logo"></a></p>
 		</header>
 
 <!-- menu principal -->
@@ -28,35 +29,35 @@
 					<li class="menu-b">
 						<a class="current-link" href="casting.html"> CASTING </a>
 					</li>
+					<li class="menu-c">
+						<a href="galaxie.html"> GALAXIE </a>
+					</li>
 				</ul>
 		</nav>
 
-<!-- Slideshow container -->
+<!-- Bannière défilante -->
 <div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
+  <!-- Images de la bannière et fonctionnalités de la bannière -->
   <div class="mySlides fade">
     <img class="slideshow" src="images/avatar/banner-1.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <img class="slideshow" src="images/avatar/banner-2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <img class="slideshow" src="images/avatar/banner-3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
   </div>
 
-  <!-- Next and previous buttons -->
+  <!-- Boutons suivant et précédent -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 
-<!-- The dots/circles -->
+<!-- Les points de sélection en-dessous de la bannière -->
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
@@ -64,7 +65,7 @@
 </div>
 
 
-<!-- galerie image casting "Director" -->
+<!-- Galerie image casting "realisateur" avec identité et rôle -->
 		<article class="casting-realisateur">
 			<div class="titlebar">
 					<h2 class="titlebar-title">RÉALISATEURS</h2>
@@ -99,52 +100,79 @@
 			</div>
 		</article>
 
-<!-- galerie image casting "Acteurs et actrices" -->
+<!-- Galerie image casting "actrices et acteurs" avec identité et rôle -->
 		<article class="casting-acteur">
 			<div class="titlebar">
 					<h2 class="titlebar-title">ACTEURS ET ACTRICES</h2>
 			</div>
 		<div class="casting1">
 			<figure class="thumbnail">
-				<img class="thumbnail-img" src="images/casting/neytiri.jpg" onmouseover="this.src='images/casting/saldana.jpg'" onmouseout="this.src='images/casting/neytiri.jpg'" alt="Zoe Saldana"/>					<figcaption class="identite">Zoe Saldana</figcaption>
+				<img class="thumbnail-img" src="images/casting/neytiri.jpg" onmouseover="this.src='images/casting/saldana.jpg'" onmouseout="this.src='images/casting/neytiri.jpg'" alt="Zoe Saldana"/>					
+					<figcaption class="identite">Zoe Saldana</figcaption>
 						<figcaption class="role">Neytiri</figcaption>
 			</figure>
 		</div>
+
 		<div class="casting1">
 			<figure class="thumbnail">
-				<img class="thumbnail-img" src="images/casting/jake.jpg" onmouseover="this.src='images/casting/worthington.jpg'" onmouseout="this.src='images/casting/jake.jpg'" alt="Sam Worthington"/>					<figcaption class="identite">Sam Worthington</figcaption>
+				<img class="thumbnail-img" src="images/casting/jake.jpg" onmouseover="this.src='images/casting/worthington.jpg'" onmouseout="this.src='images/casting/jake.jpg'" alt="Sam Worthington"/>					
+					<figcaption class="identite">Sam Worthington</figcaption>
 						<figcaption class="role">Jake Sully</figcaption>
 			</figure>	
 		</div>
-			<div class="casting1">
-				<figure class="thumbnail">
-				<img class="thumbnail-img" src="images/casting/grace.jpg" onmouseover="this.src='images/casting/weaver.jpg'" onmouseout="this.src='images/casting/grace.jpg'" alt="Sigourney Weaver"/>						<figcaption class="identite">Sigourney Weaver</figcaption>
-							<figcaption class="role">Grace</figcaption>
+
+		<div class="casting1">
+			<figure class="thumbnail">
+				<img class="thumbnail-img" src="images/casting/grace.jpg" onmouseover="this.src='images/casting/weaver.jpg'" onmouseout="this.src='images/casting/grace.jpg'" alt="Sigourney Weaver"/>						
+					<figcaption class="identite">Sigourney Weaver</figcaption>
+						<figcaption class="role">Grace</figcaption>
 				</figure>
 			</div>
-			<div class="casting1">
+
+		<div class="casting1">
 			<figure class="thumbnail">
-				<img class="thumbnail-img" src="images/casting/colonel.jpg" onmouseover="this.src='images/casting/lang.jpg'" onmouseout="this.src='images/casting/colonel.jpg'" alt="Stephen Lang"/>					<figcaption class="identite">Sephen Lang</figcaption>
+				<img class="thumbnail-img" src="images/casting/colonel.jpg" onmouseover="this.src='images/casting/lang.jpg'" onmouseout="this.src='images/casting/colonel.jpg'" alt="Stephen Lang"/>					
+					<figcaption class="identite">Sephen Lang</figcaption>
 						<figcaption class="role">Colonel Miles Quaritch</figcaption>
 			</figure>	
 		</div>
-			<div class="casting1">
+
+		<div class="casting1">
 			<figure class="thumbnail">
-				<img class="thumbnail-img" src="images/casting/norm.png" onmouseover="this.src='images/casting/moore.jpg'" onmouseout="this.src='images/casting/norm.png'" alt="Joel David Moore"/>					<figcaption class="identite">Joel David Moore</figcaption>
+				<img class="thumbnail-img" src="images/casting/norm.png" onmouseover="this.src='images/casting/moore.jpg'" onmouseout="this.src='images/casting/norm.png'" alt="Joel David Moore"/>					
+					<figcaption class="identite">Joel David Moore</figcaption>
 						<figcaption class="role">Norm Spellman</figcaption>
 			</figure>	
 		</div>
-			<div class="casting1">
+
+		<div class="casting1">
 			<figure class="thumbnail">
-				<img class="thumbnail-img" src="images/casting/moat.jpg" onmouseover="this.src='images/casting/pounder.jpg'" onmouseout="this.src='images/casting/moat.jpg'" alt="CCH Pounder"/>					<figcaption class="identite">CCH Pounder</figcaption>
+				<img class="thumbnail-img" src="images/casting/moat.jpg" onmouseover="this.src='images/casting/pounder.jpg'" onmouseout="this.src='images/casting/moat.jpg'" alt="CCH Pounder"/>					
+					<figcaption class="identite">CCH Pounder</figcaption>
 						<figcaption class="role">Moat</figcaption>
+			</figure>	
+		</div>
+
+				<div class="casting1">
+			<figure class="thumbnail">
+				<img class="thumbnail-img" src="images/casting/moras.jpg" onmouseover="this.src='images/casting/steve.jpg'" onmouseout="this.src='images/casting/moras.jpg'" alt="Steve Morfouasse"/>					
+					<figcaption class="identite">Steve Morfouasse</figcaption>
+						<figcaption class="role">Roger Moras</figcaption>
+			</figure>	
+		</div>
+		
+		<div class="casting1">
+			<figure class="thumbnail">
+				<img class="thumbnail-img" src="images/casting/robta.jpg" onmouseover="this.src='images/casting/ines.jpg'" onmouseout="this.src='images/casting/robta.jpg'" alt="Ines Robin de la Cotardière"/>					
+					<figcaption class="identite">Inès Robin d.l Cotardière</figcaption>
+						<figcaption class="role">Robtari</figcaption>
 			</figure>	
 		</div>
 		</article>
 
 <!-- footer, bas de page -->
 			<footer>
-				<p class="footer-description"> ™ and © 2020 Twentieth Century Studios. JAMES CAMERON'S AVATAR is a trademark of the Twentieth Century Studios. All Rights Reserved </p>
+				<p class="footer-description"> ™ and © 2020 Twentieth Century Studios. AVATAR de JAMES CAMERON est une marque déposée de Twentieth Century Studios. Tous droits réservés </p>
 			</footer>
 			<script type="text/javascript" src="scripts/main.js"></script>
 	</body>

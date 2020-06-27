@@ -12,6 +12,10 @@ body{
 	font-size:13px;
 }
 
+body.galaxie {
+	background-image:url
+}
+
 h1{
 	background: #131313;
 	color: #91939;
@@ -191,6 +195,8 @@ figcaption {
 	font-size: 12px;
 }
 
+/* page Casting */
+
 .casting-realisateur {
 	padding: 0 auto;
 	margin: 50px;
@@ -226,7 +232,108 @@ figcaption {
 }
 
 
-/* ----------------- */
+/* page Galaxie */
+
+.galaxie-banner {
+	max-height:300px;
+	width: 100%;
+	position: relative;
+	margin: auto;
+	width:100%;
+	object-fit: cover;
+}
+
+.home-page_galaxie{
+	display: block;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	margin-top:20px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	min-height: 200px;
+	max-height:500px;
+}
+
+
+.background-galaxie{
+	display: block;
+	position: relative;
+	margin: auto;
+	object-fit: cover;
+	min-height: 200px;
+	max-height: 500px;
+	width: 100%;
+	max-width: 1200px;
+	overflow: hidden;
+}
+
+.image-galaxie{
+	position: relative;
+	height: auto;
+	margin: auto;
+	max-width: 2000px;
+	width:100%;
+	object-fit: cover;
+	}
+
+.text-galaxie{
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+}
+
+.text{
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-left: 5%;
+}
+
+.title-galaxie{
+	background-color: transparent;
+	color: white;
+	text-align: left;
+	margin-bottom: 10%;
+	text-shadow: 0.04em 0.04em 0.2em black;
+}
+
+.p3{
+	display: block;
+	position: relative;
+	color: white;
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 10%;
+	text-shadow: 0.04em 0.04em 0.2em #67267D;
+}
+
+
+/* Si la taille de l'écran est 801px de large  ou plus, mettre la taille de la police à 36px */
+@media screen and (min-width: 801px) {
+.title-galaxie {
+    font-size: 36px;
+  }
+.p3 {
+	font-size: 22px;
+}
+}
+
+/* Si la taille de l'écran est 600px de large ou moins, mettre la taille de la police à 23px */
+@media screen and (max-width: 800px) {
+.title-galaxie {
+    font-size: 23px;
+  }
+.p3 {
+	font-size: 15px;
+}
+}
+
+
+/* CSS de la bannière défilance */
 
 * {box-sizing:border-box}
 
@@ -237,12 +344,12 @@ figcaption {
   margin: auto;
 }
 
-/* Hide the images by default */
+/* Cacher les images par défaut */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+/* Bouttons suivant et précédent */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -258,13 +365,13 @@ figcaption {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Positiion du bouton Suivant à droit */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, ajouter un arrière plan noir avec un peu de transparence */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -291,7 +398,7 @@ figcaption {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* Les points indicateurs */
 .dot {
   cursor: pointer;
   height: 8px;
@@ -311,7 +418,7 @@ figcaption {
   background-color: #717171;
 }
 
-/* Fading animation */
+/* Les animations d'ombre */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 3s;
@@ -333,21 +440,4 @@ figcaption {
 	width:100%;
 	height:300px;;
 	object-fit: cover;
-}
-
-
-/*. @media screen and (max-width: 900px) {
-	
-	.body {
-		display: block;
-	}
-
-	.main {
-		width: 100%;
-	}
-
-	.sidebar {
-		width: 100%;
-	}
-
 }
