@@ -23,6 +23,11 @@ h1{
 	text-align:center;
 }
 
+#logo-avatar {
+	font-size: 44px;
+	text-align: center;
+}
+
 .degrade {
     font-size: 44px;
     background: -webkit-gradient(linear, left top, left bottom, from(#3ffcdc), to(#131313));
@@ -155,6 +160,8 @@ width: 60px;
 	color: #3CFECE
 }
 
+/* page Casting */
+
 .casting1{
 	width:50%;
 	box-sizing: border-box;
@@ -165,6 +172,7 @@ width: 60px;
 	float: left;
 }
 
+/* page Casting - images */
 
 .thumbnail {
 	border:0px solid white;
@@ -183,6 +191,8 @@ figcaption {
 	text-align: center;
 }
 
+/* page Casting - descriptions */
+
 .identite {
 	color:lightgrey;
 	font-style:bold;
@@ -195,7 +205,7 @@ figcaption {
 	font-size: 12px;
 }
 
-/* page Casting */
+/* page Casting - catégorie Réalisateurs */
 
 .casting-realisateur {
 	padding: 0 auto;
@@ -208,6 +218,8 @@ figcaption {
 	text-align: left;
 }
 
+/* page Casting - catégorie Acteurs */
+
 .casting-acteur {
 	padding: 0 auto;
 	margin: 50px;
@@ -218,6 +230,8 @@ figcaption {
 	padding-bottom:1px;
 	text-align: left;
 }
+
+/* page Casting - Titres */
 
 .titlebar-title {
 	margin-right: 0 auto;
@@ -300,7 +314,7 @@ figcaption {
 	text-shadow: 0.04em 0.04em 0.2em black;
 }
 
-.p3{
+.description-galaxie{
 	display: block;
 	position: relative;
 	color: white;
@@ -312,24 +326,123 @@ figcaption {
 }
 
 
-/* Si la taille de l'écran est 801px de large  ou plus, mettre la taille de la police à 36px */
+/* Règles CSS media screen pour les écrans >801px */
 @media screen and (min-width: 801px) {
 .title-galaxie {
     font-size: 36px;
   }
+
 .p3 {
 	font-size: 22px;
 }
 }
 
-/* Si la taille de l'écran est 600px de large ou moins, mettre la taille de la police à 23px */
+/* Règles CSS media screen pour les écrans <800px */
 @media screen and (max-width: 800px) {
-.title-galaxie {
+
+	header{
+		height: 80px;
+		width: 100%;
+		width: auto;
+	}
+
+	h1{
+		font-size: 25px;
+		text-align: center;
+	}
+
+	h2{
+		font-size: 35px;
+	}
+
+	.menu{
+		padding: 10px 10px;
+	}
+
+	a{
+		font-size: 16px;
+	}
+
+	#logo{
+		width:100%;
+		width: auto;
+		height: 70px;
+	}
+
+	#logo-avatar{
+		font-size:44px;
+	}
+
+	/* page Bande Annonce */
+
+	.left{
+		width: 100%;
+		position: center;
+	}
+
+	.right{
+		width: 100%;
+		position: center;
+	}
+
+	p{
+		font-size: 14px;
+	}
+
+	/* page Casting */
+
+	.casting-realisateur {
+  		padding: 0px 0px 0px 0px;
+  		justify-content: center;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 100%;
+	}
+
+	.casting-acteur {
+  		padding: 0px 0px 0px 0px;
+  		justify-content: center;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 100%;	
+  	}
+
+  	.casting1 {
+		width:100%;
+		width: auto;
+		box-sizing: border-box;
+		height: auto;
+		display: inline-block;
+		margin-right: 0px;
+		float: center;
+  	}
+
+	/* page Casting - images */
+
+	.thumbnail-img {
+	width:150px;
+	height:150px;
+	object-fit: cover;
+	}
+
+	/* page Casting - descriptions */
+
+	.identite {
+	color:lightgrey;
+	font-style:bold;
+	font-size:14px;
+	margin-top: 14px;
+	}
+
+	/* page Galaxie */
+
+	.title-galaxie {
     font-size: 23px;
-  }
-.p3 {
+ 	}
+
+	.description-galaxie{
 	font-size: 15px;
-}
+	}
 }
 
 
