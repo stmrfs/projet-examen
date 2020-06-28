@@ -479,6 +479,21 @@ figcaption {
 
 }
 
+/* Règles CSS media screen pour les écrans <500px */
+@media screen and (max-width: 500px) {
+
+	.title-galaxie {
+    font-size: 20px;
+    margin-bottom: 3%;
+ 	}
+
+	.description-galaxie{
+	font-size: 14px;
+	margin-bottom: 5%;
+	}
+
+}
+
 
 /* CSS de la bannière défilance */
 
