@@ -86,7 +86,6 @@ nav li {
 	padding:30px;
 }
 
-
 nav a {
 	padding: 20px 30px;
 }
@@ -375,6 +374,19 @@ figcaption {
 
 	/* page Bande Annonce */
 
+	#bandeannonce {
+	height: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	}
+
+	.container {
+	margin:0px 5%;
+	display:flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	}
+
 	.left{
 		width: 100%;
 		position: center;
@@ -420,8 +432,8 @@ figcaption {
 	/* page Casting - images */
 
 	.thumbnail-img {
-	width:150px;
-	height:150px;
+	width:200px;
+	height:200px;
 	object-fit: cover;
 	}
 
@@ -430,19 +442,26 @@ figcaption {
 	.identite {
 	color:lightgrey;
 	font-style:bold;
-	font-size:14px;
+	font-size:17px;
 	margin-top: 14px;
+	}
+
+	.role {
+		font-size: 14px;
 	}
 
 	/* page Galaxie */
 
 	.title-galaxie {
     font-size: 23px;
+    margin-bottom: 7%;
  	}
 
 	.description-galaxie{
 	font-size: 15px;
+	margin-bottom: 7%;
 	}
+
 }
 
 
