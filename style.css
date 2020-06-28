@@ -374,10 +374,10 @@ figcaption {
 	
 	footer {
 	background: radial-gradient(circle at center, #2cb7a0, #131313);
-	height: 65px;
+	height: 70px;
     width:100%;
 	text-align:center;
-	padding-top: 5px;
+	padding-top: 2px;
 	padding-bottom: 5px;
     position: relative;
     bottom: 0;
